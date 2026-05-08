@@ -74,7 +74,7 @@ def _load_schema(data_dir: str):
     if key in _cache:
         return _cache[key]
 
-    folder = Path(data_dir)
+    folder = Path(__file__).resolve().parent / Path(data_dir)
     if not folder.exists():
         raise HTTPException(status_code=404, detail=f"Data directory not found: {data_dir}")
 
