@@ -14,30 +14,53 @@ def load_json(path: Path) -> dict:
         return json.load(f)
 
 def classify_file(doc: dict) -> Tuple[str, str]:
-    """
-    Return (family, reason)
-    family:
-      - COMPOSITION_VERSION
-      - EHR_INDEX
-      - UNKNOWN
-    """
-    # Composition docs
+    # Existing: Versioned composition
     arch = safe_get(doc, ["versions", "data", "archetype_node_id"])
     content = safe_get(doc, ["versions", "data", "content"])
     if isinstance(arch, str) and isinstance(content, list):
         return "COMPOSITION_VERSION", "versions.data.archetype_node_id + versions.data.content[] present"
-
-    # EHR index / summary docs
+    
+    # NEW: Direct composition (list or dict content)
+    if isinstance(doc.get("archetype_node_id"), str) and isinstance(doc.get("content"), (list, dict)):
+        return "COMPOSITION_DIRECT", "direct composition with content"
+    
+    # Existing: EHR index
     if "ehr_id" in doc and (isinstance(doc.get("compositions"), list) or isinstance(doc.get("contributions"), list)):
         return "EHR_INDEX", "ehr_id + compositions/contributions present"
-
-    return "UNKNOWN", "Not recognized as composition version"
+    
+    return "UNKNOWN", "Not recognized as composition"
 
 def get_composition_archetype(doc: dict) -> str:
-    return safe_get(doc, ["versions", "data", "archetype_node_id"], "UNKNOWN_COMPOSITION")
+    return safe_get(doc, ["versions", "data", "archetype_node_id"], None) or doc.get("archetype_node_id", "UNKNOWN_COMPOSITION")
 
 def get_composition_label(doc: dict) -> str:
-    return safe_get(doc, ["versions", "data", "name", "value"], "Unknown composition")
+    return safe_get(doc, ["versions", "data", "name", "value"], None) or safe_get(doc, ["name", "value"], "Unknown composition")
+
+# def classify_file(doc: dict) -> Tuple[str, str]:
+#     """
+#     Return (family, reason)
+#     family:
+#       - COMPOSITION_VERSION
+#       - EHR_INDEX
+#       - UNKNOWN
+#     """
+#     # Composition docs
+#     arch = safe_get(doc, ["versions", "data", "archetype_node_id"])
+#     content = safe_get(doc, ["versions", "data", "content"])
+#     if isinstance(arch, str) and isinstance(content, list):
+#         return "COMPOSITION_VERSION", "versions.data.archetype_node_id + versions.data.content[] present"
+
+#     # EHR index / summary docs
+#     if "ehr_id" in doc and (isinstance(doc.get("compositions"), list) or isinstance(doc.get("contributions"), list)):
+#         return "EHR_INDEX", "ehr_id + compositions/contributions present"
+
+#     return "UNKNOWN", "Not recognized as composition version"
+
+# def get_composition_archetype(doc: dict) -> str:
+#     return safe_get(doc, ["versions", "data", "archetype_node_id"], "UNKNOWN_COMPOSITION")
+
+# def get_composition_label(doc: dict) -> str:
+#     return safe_get(doc, ["versions", "data", "name", "value"], "Unknown composition")
 
 def group_docs_by_composition_archetype(folder: Path):
     """

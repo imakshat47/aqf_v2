@@ -18,6 +18,23 @@ def node_type(obj: dict) -> str:
 def node_at(obj: dict) -> str:
     return obj.get("archetype_node_id", "") or ""
 
+def _extract_composition_root(doc: dict) -> tuple[dict, str, str]:
+    """Extract composition data, archetype, and label from either versioned or direct format."""
+    # Try versioned format first
+    comp = safe_get(doc, ["versions", "data"], None)
+    if comp and isinstance(comp, dict) and "content" in comp:
+        arch = comp.get("archetype_node_id", "UNKNOWN_COMPOSITION")
+        label = safe_get(comp, ["name", "value"], "Unknown composition")
+        return comp, arch, label
+    
+    # Direct composition format
+    if isinstance(doc.get("content"), (list, dict)) and isinstance(doc.get("archetype_node_id"), str):
+        arch = doc.get("archetype_node_id", "UNKNOWN_COMPOSITION")
+        label = safe_get(doc, ["name", "value"], "Unknown composition")
+        return doc, arch, label
+    
+    raise ValueError("Document is not a recognized composition format")
+
 def extract_element_value_and_kind(el: dict):
     """
     Extract a display/query value from an openEHR ELEMENT.
@@ -63,14 +80,23 @@ def build_union_schema(docs: List[dict]) -> Dict[str, Any]:
     if not docs:
         raise ValueError("No valid composition documents passed into build_union_schema().")
 
-    first_content = safe_get(docs[0], ["versions", "data", "content"], None)
-    if not isinstance(first_content, list):
-        raise ValueError(
-            "Input documents are not composition-version documents "
-            "(missing versions.data.content[])."
-        )
+    # first_content = safe_get(docs[0], ["versions", "data", "content"], None)
+    # composition_archetype = safe_get(docs[0], ["versions", "data", "archetype_node_id"], "UNKNOWN_COMPOSITION")
 
-    composition_archetype = safe_get(docs[0], ["versions", "data", "archetype_node_id"], "UNKNOWN_COMPOSITION")
+    # Replace this:
+    # first_content = safe_get(docs[0], ["versions", "data", "content"], None)
+    # composition_archetype = safe_get(docs[0], ["versions", "data", "archetype_node_id"], "UNKNOWN_COMPOSITION")
+
+    # With this:
+    comp_root, composition_archetype, composition_label = _extract_composition_root(docs[0])
+    first_content = comp_root.get("content")
+
+    # if not isinstance(first_content, list):
+    #     raise ValueError(
+    #         "Input documents are not composition-version documents "
+    #         "(missing versions.data.content[])."
+    #     )
+
     composition_label = safe_get(docs[0], ["versions", "data", "name", "value"], "Unknown composition")
 
     union = {
@@ -80,7 +106,9 @@ def build_union_schema(docs: List[dict]) -> Dict[str, Any]:
     }
 
     for doc in docs:
-        content = safe_get(doc, ["versions", "data", "content"], [])
+        # content = safe_get(doc, ["versions", "data", "content"], [])
+        comp_root, _, _ = _extract_composition_root(doc)
+        content = ensure_list(comp_root.get("content", []))
         for entry in ensure_list(content):
             if not isinstance(entry, dict):
                 continue

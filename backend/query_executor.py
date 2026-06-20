@@ -16,14 +16,21 @@ def parse_field_key(field_key: str) -> Dict:
         "element_at_code": element_at
     }
 
+def _get_composition_root(doc: dict) -> dict:
+    """Get composition data from either versioned or direct format."""
+    comp = safe_get(doc, ["versions", "data"], None)
+    if comp and isinstance(comp, dict):
+        return comp
+    # Direct composition
+    if isinstance(doc.get("content"), (list, dict)) and isinstance(doc.get("archetype_node_id"), str):
+        return doc
+    return {}
+
 def extract_element_values(doc: dict, field_meta: Dict) -> List[Tuple[Any, str]]:
-    """
-    Return all matching occurrences of a field.
-    Uses cluster-path-aware matching and element_name + at-code for robustness.
-    """
-    comp = safe_get(doc, ["versions", "data"], {}) or {}
+    comp = _get_composition_root(doc)
     if comp.get("archetype_node_id") != field_meta["composition_archetype"]:
         return []
+    # ... rest unchanged
 
     content = ensure_list(comp.get("content", []))
     hits = []
