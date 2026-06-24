@@ -1,0 +1,1381 @@
+{
+  "_record_id": 6,
+  "demographic_data": {
+    "archetype_node_id": "openEHR-EHR-COMPOSITION.demographic_data.v1",
+    "name": {
+      "value": "Demographic data"
+    },
+    "uid": {
+      "type": "HIER_OBJECT_ID",
+      "value": "1.2.2.4953495398554.9505452544954.4810157539950.5148555498515.2535355984848"
+    },
+    "archetype_details": {
+      "archetype_id": {
+        "value": "openEHR-EHR-COMPOSITION.demographic_data.v1"
+      },
+      "template_id": {
+        "value": "0cea0dec-8a12-48cb-b83c-3294aa68c9a8"
+      },
+      "rm_version": "1.0.2"
+    },
+    "language": {
+      "terminology_id": {
+        "value": "ISO_639-1"
+      },
+      "code_string": "en"
+    },
+    "territory": {
+      "terminology_id": {
+        "value": "ISO_3166-1"
+      },
+      "code_string": "BR"
+    },
+    "category": {
+      "value": "persistent",
+      "defining_code": {
+        "terminology_id": {
+          "value": "openehr"
+        },
+        "code_string": "431"
+      }
+    },
+    "composer": {
+      "type": "PARTY_IDENTIFIED",
+      "name": "Physician"
+    },
+    "content": {
+      "archetype_node_id": "openEHR-EHR-ADMIN_ENTRY.demographic_data.v1",
+      "type": "ADMIN_ENTRY",
+      "name": {
+        "value": "Demographic data"
+      },
+      "archetype_details": {
+        "archetype_id": {
+          "value": "openEHR-EHR-ADMIN_ENTRY.demographic_data.v1"
+        },
+        "template_id": {
+          "value": "0cea0dec-8a12-48cb-b83c-3294aa68c9a8"
+        },
+        "rm_version": "1.0.2"
+      },
+      "language": {
+        "terminology_id": {
+          "value": "ISO_639-1"
+        },
+        "code_string": "en"
+      },
+      "encoding": {
+        "terminology_id": {
+          "value": "IANA_character-sets"
+        },
+        "code_string": "UTF-8"
+      },
+      "subject": {
+        "type": "PARTY_SELF",
+        "external_ref": {
+          "id": {
+            "type": "HIER_OBJECT_ID",
+            "value": "1.1.1.4953495398554.9505452544954.4810157539950.5148555498515.2535355984848"
+          },
+          "type": "PARTY"
+        }
+      },
+      "data": {
+        "archetype_node_id": "at0001",
+        "type": "ITEM_TREE",
+        "name": {
+          "value": "components"
+        },
+        "items": [
+          {
+            "archetype_node_id": "at0002",
+            "type": "ELEMENT",
+            "name": {
+              "value": "birth date"
+            },
+            "value": {
+              "type": "DV_DATE",
+              "value": "1957-01-01TZ"
+            }
+          },
+          {
+            "archetype_node_id": "at0003",
+            "type": "ELEMENT",
+            "name": {
+              "value": "gender"
+            },
+            "value": {
+              "type": "DV_CODED_TEXT",
+              "value": "Masculino",
+              "defining_code": {
+                "terminology_id": {
+                  "value": "SEXO"
+                },
+                "code_string": "1"
+              }
+            }
+          },
+          {
+            "archetype_node_id": "at0004",
+            "type": "ELEMENT",
+            "name": {
+              "value": "race"
+            },
+            "null_flavour": {
+              "value": "unknown",
+              "defining_code": {
+                "terminology_id": {
+                  "value": "openehr"
+                },
+                "code_string": "253"
+              }
+            }
+          },
+          {
+            "archetype_node_id": "at0005",
+            "type": "ELEMENT",
+            "name": {
+              "value": "ethnic group"
+            },
+            "null_flavour": {
+              "value": "unknown",
+              "defining_code": {
+                "terminology_id": {
+                  "value": "openehr"
+                },
+                "code_string": "253"
+              }
+            }
+          },
+          {
+            "archetype_node_id": "at0007",
+            "type": "ELEMENT",
+            "name": {
+              "value": "educational level"
+            },
+            "value": {
+              "type": "DV_CODED_TEXT",
+              "value": "1º grau",
+              "defining_code": {
+                "terminology_id": {
+                  "value": "INSTRU"
+                },
+                "code_string": "2"
+              }
+            }
+          },
+          {
+            "archetype_node_id": "at0008",
+            "type": "ELEMENT",
+            "name": {
+              "value": "nationality"
+            },
+            "value": {
+              "type": "DV_CODED_TEXT",
+              "value": "BRASIL",
+              "defining_code": {
+                "terminology_id": {
+                  "value": "UFNACIO"
+                },
+                "code_string": "010"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "hospitalisation": {
+    "archetype_node_id": "openEHR-EHR-COMPOSITION.hospitalisation.v1",
+    "name": {
+      "value": "Hospitalisation"
+    },
+    "uid": {
+      "type": "HIER_OBJECT_ID",
+      "value": "1.2.1.5297569710197.5499505550575.2524899579752.5252559897569.81015355505550"
+    },
+    "archetype_details": {
+      "archetype_id": {
+        "value": "openEHR-EHR-COMPOSITION.hospitalisation.v1"
+      },
+      "template_id": {
+        "value": "02e9b88a-2af7-4fc0-9724-8cd71434188b"
+      },
+      "rm_version": "1.0.2"
+    },
+    "language": {
+      "terminology_id": {
+        "value": "ISO_639-1"
+      },
+      "code_string": "en"
+    },
+    "territory": {
+      "terminology_id": {
+        "value": "ISO_3166-1"
+      },
+      "code_string": "BR"
+    },
+    "category": {
+      "value": "event",
+      "defining_code": {
+        "terminology_id": {
+          "value": "openehr"
+        },
+        "code_string": "433"
+      }
+    },
+    "composer": {
+      "type": "PARTY_IDENTIFIED",
+      "name": "Physician"
+    },
+    "context": {
+      "start_time": {
+        "value": "2018-10-25T14:17:31,400"
+      },
+      "setting": {
+        "value": "secondary medical",
+        "defining_code": {
+          "terminology_id": {
+            "value": "openehr"
+          },
+          "code_string": "232"
+        }
+      }
+    },
+    "content": [
+      {
+        "archetype_node_id": "openEHR-EHR-ADMIN_ENTRY.patient_discharge.v1",
+        "type": "ADMIN_ENTRY",
+        "name": {
+          "value": "Patient discharge"
+        },
+        "archetype_details": {
+          "archetype_id": {
+            "value": "openEHR-EHR-ADMIN_ENTRY.patient_discharge.v1"
+          },
+          "template_id": {
+            "value": "02e9b88a-2af7-4fc0-9724-8cd71434188b"
+          },
+          "rm_version": "1.0.2"
+        },
+        "language": {
+          "terminology_id": {
+            "value": "ISO_639-1"
+          },
+          "code_string": "en"
+        },
+        "encoding": {
+          "terminology_id": {
+            "value": "IANA_character-sets"
+          },
+          "code_string": "UTF-8"
+        },
+        "subject": {
+          "type": "PARTY_SELF",
+          "external_ref": {
+            "id": {
+              "type": "HIER_OBJECT_ID",
+              "value": "1.1.1.5297569710197.5499505550575.2524899579752.5252559897569.81015355505550"
+            },
+            "type": "PARTY"
+          }
+        },
+        "data": {
+          "archetype_node_id": "at0001",
+          "type": "ITEM_TREE",
+          "name": {
+            "value": "Components"
+          },
+          "items": [
+            {
+              "archetype_node_id": "at0002",
+              "type": "ELEMENT",
+              "name": {
+                "value": "date of discharge"
+              },
+              "value": {
+                "type": "DV_DATE_TIME",
+                "value": "2010-01-01T00:00:00-03:00"
+              }
+            },
+            {
+              "archetype_node_id": "at0046",
+              "type": "ELEMENT",
+              "name": {
+                "value": "hospital infection"
+              },
+              "null_flavour": {
+                "value": "unknown",
+                "defining_code": {
+                  "terminology_id": {
+                    "value": "openehr"
+                  },
+                  "code_string": "253"
+                }
+              }
+            },
+            {
+              "archetype_node_id": "at0047",
+              "type": "ELEMENT",
+              "name": {
+                "value": "claim reason"
+              },
+              "value": {
+                "type": "DV_CODED_TEXT",
+                "value": "Alta - internado para diagnóstico",
+                "defining_code": {
+                  "terminology_id": {
+                    "value": "MOTSAIPE"
+                  },
+                  "code_string": "15"
+                }
+              }
+            },
+            {
+              "archetype_node_id": "at0048",
+              "type": "ELEMENT",
+              "name": {
+                "value": "death indicator"
+              },
+              "value": {
+                "type": "DV_BOOLEAN",
+                "value": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "archetype_node_id": "openEHR-EHR-ADMIN_ENTRY.hospitalization_authorization.v1",
+        "type": "ADMIN_ENTRY",
+        "name": {
+          "value": "Authorization for hospital admission"
+        },
+        "archetype_details": {
+          "archetype_id": {
+            "value": "openEHR-EHR-ADMIN_ENTRY.hospitalization_authorization.v1"
+          },
+          "template_id": {
+            "value": "02e9b88a-2af7-4fc0-9724-8cd71434188b"
+          },
+          "rm_version": "1.0.2"
+        },
+        "language": {
+          "terminology_id": {
+            "value": "ISO_639-1"
+          },
+          "code_string": "en"
+        },
+        "encoding": {
+          "terminology_id": {
+            "value": "IANA_character-sets"
+          },
+          "code_string": "UTF-8"
+        },
+        "subject": {
+          "type": "PARTY_SELF",
+          "external_ref": {
+            "id": {
+              "type": "HIER_OBJECT_ID",
+              "value": "1.1.1.5297569710197.5499505550575.2524899579752.5252559897569.81015355505550"
+            },
+            "type": "PARTY"
+          }
+        },
+        "data": {
+          "archetype_node_id": "at0001",
+          "type": "ITEM_TREE",
+          "name": {
+            "value": "Components"
+          },
+          "items": [
+            {
+              "archetype_node_id": "at0061",
+              "type": "ELEMENT",
+              "name": {
+                "value": "Issue date"
+              },
+              "value": {
+                "type": "DV_DATE",
+                "value": "2010-01-01TZ"
+              }
+            },
+            {
+              "archetype_node_id": "at0016",
+              "type": "ELEMENT",
+              "name": {
+                "value": "ICU - Total"
+              },
+              "value": {
+                "type": "DV_COUNT",
+                "accuracy": "0.0",
+                "magnitude": "0"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "archetype_node_id": "openEHR-EHR-ADMIN_ENTRY.admission.v1",
+        "type": "ADMIN_ENTRY",
+        "name": {
+          "value": "Patient admission"
+        },
+        "archetype_details": {
+          "archetype_id": {
+            "value": "openEHR-EHR-ADMIN_ENTRY.admission.v1"
+          },
+          "template_id": {
+            "value": "02e9b88a-2af7-4fc0-9724-8cd71434188b"
+          },
+          "rm_version": "1.0.2"
+        },
+        "language": {
+          "terminology_id": {
+            "value": "ISO_639-1"
+          },
+          "code_string": "en"
+        },
+        "encoding": {
+          "terminology_id": {
+            "value": "IANA_character-sets"
+          },
+          "code_string": "UTF-8"
+        },
+        "subject": {
+          "type": "PARTY_SELF",
+          "external_ref": {
+            "id": {
+              "type": "HIER_OBJECT_ID",
+              "value": "1.1.1.5297569710197.5499505550575.2524899579752.5252559897569.81015355505550"
+            },
+            "type": "PARTY"
+          }
+        },
+        "data": {
+          "archetype_node_id": "at0001",
+          "type": "ITEM_TREE",
+          "name": {
+            "value": "Tree"
+          },
+          "items": [
+            {
+              "archetype_node_id": "at0002",
+              "type": "ELEMENT",
+              "name": {
+                "value": "Patient class"
+              },
+              "null_flavour": {
+                "value": "unknown",
+                "defining_code": {
+                  "terminology_id": {
+                    "value": "openehr"
+                  },
+                  "code_string": "253"
+                }
+              }
+            },
+            {
+              "archetype_node_id": "at0073",
+              "type": "CLUSTER",
+              "name": {
+                "value": "Assigned patient location"
+              },
+              "items": [
+                {
+                  "archetype_node_id": "at0104",
+                  "type": "CLUSTER",
+                  "name": {
+                    "value": "Facility"
+                  },
+                  "items": {
+                    "archetype_node_id": "at0106",
+                    "type": "ELEMENT",
+                    "name": {
+                      "value": "Universal ID"
+                    },
+                    "value": {
+                      "type": "DV_CODED_TEXT",
+                      "value": "91998dea5e361a33d2a45802f6eb9ec8610ac4dd803a98df63cf4df37d75af2d4de86a064d07b5a8544a7a0f00bcbbdc788e4f700f46e22afff04da05a8ce28c",
+                      "defining_code": {
+                        "terminology_id": {
+                          "value": "CGC_HOSP"
+                        },
+                        "code_string": "9265e3b568e7cfdceb1b7dbaae744941"
+                      }
+                    }
+                  }
+                },
+                {
+                  "archetype_node_id": "at0084",
+                  "type": "CLUSTER",
+                  "name": {
+                    "value": "Address"
+                  },
+                  "items": {
+                    "archetype_node_id": "at0087",
+                    "type": "ELEMENT",
+                    "name": {
+                      "value": "State/province"
+                    },
+                    "value": {
+                      "type": "DV_CODED_TEXT",
+                      "value": "SÃO PAULO",
+                      "defining_code": {
+                        "terminology_id": {
+                          "value": "IBGE"
+                        },
+                        "code_string": "SP"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "archetype_node_id": "at0013",
+              "type": "ELEMENT",
+              "name": {
+                "value": "Admission type"
+              },
+              "value": {
+                "type": "DV_CODED_TEXT",
+                "value": "Urg/Emerg (Hosp referência)",
+                "defining_code": {
+                  "terminology_id": {
+                    "value": "CARATEND"
+                  },
+                  "code_string": "02"
+                }
+              }
+            },
+            {
+              "archetype_node_id": "at0041",
+              "type": "ELEMENT",
+              "name": {
+                "value": "Hospital service"
+              },
+              "value": {
+                "type": "DV_TEXT",
+                "value": "Cirúrgico"
+              }
+            },
+            {
+              "archetype_node_id": "at0071",
+              "type": "ELEMENT",
+              "name": {
+                "value": "Admit date/time"
+              },
+              "value": {
+                "type": "DV_DATE_TIME",
+                "value": "2010-01-01T00:00:00-03:00"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis-sus.v1",
+        "type": "EVALUATION",
+        "name": {
+          "value": "Problem/Diagnosis"
+        },
+        "archetype_details": {
+          "archetype_id": {
+            "value": "openEHR-EHR-EVALUATION.problem_diagnosis-sus.v1"
+          },
+          "template_id": {
+            "value": "02e9b88a-2af7-4fc0-9724-8cd71434188b"
+          },
+          "rm_version": "1.0.2"
+        },
+        "language": {
+          "terminology_id": {
+            "value": "ISO_639-1"
+          },
+          "code_string": "en"
+        },
+        "encoding": {
+          "terminology_id": {
+            "value": "IANA_character-sets"
+          },
+          "code_string": "UTF-8"
+        },
+        "subject": {
+          "type": "PARTY_SELF",
+          "external_ref": {
+            "id": {
+              "type": "HIER_OBJECT_ID",
+              "value": "1.1.1.5297569710197.5499505550575.2524899579752.5252559897569.81015355505550"
+            },
+            "type": "PARTY"
+          }
+        },
+        "data": {
+          "archetype_node_id": "at0001",
+          "type": "ITEM_TREE",
+          "name": {
+            "value": "structure"
+          },
+          "items": [
+            {
+              "archetype_node_id": "at0002.1",
+              "type": "ELEMENT",
+              "name": {
+                "value": "Problem"
+              },
+              "value": {
+                "type": "DV_CODED_TEXT",
+                "value": "S82.6 Frat do maleolo lateral",
+                "defining_code": {
+                  "terminology_id": {
+                    "value": "CID10"
+                  },
+                  "code_string": "S826"
+                }
+              }
+            },
+            {
+              "archetype_node_id": "at0.1",
+              "type": "ELEMENT",
+              "name": {
+                "value": "Secondary Diagnosis"
+              },
+              "value": {
+                "type": "DV_CODED_TEXT",
+                "value": "W01.0 Residencia",
+                "defining_code": {
+                  "terminology_id": {
+                    "value": "CID10"
+                  },
+                  "code_string": "W010"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "archetype_node_id": "openEHR-EHR-ACTION.procedure-sus.v1",
+        "type": "ACTION",
+        "name": {
+          "value": "Procedure undertaken"
+        },
+        "archetype_details": {
+          "archetype_id": {
+            "value": "openEHR-EHR-ACTION.procedure-sus.v1"
+          },
+          "template_id": {
+            "value": "02e9b88a-2af7-4fc0-9724-8cd71434188b"
+          },
+          "rm_version": "1.0.2"
+        },
+        "language": {
+          "terminology_id": {
+            "value": "ISO_639-1"
+          },
+          "code_string": "en"
+        },
+        "encoding": {
+          "terminology_id": {
+            "value": "IANA_character-sets"
+          },
+          "code_string": "UTF-8"
+        },
+        "subject": {
+          "type": "PARTY_SELF",
+          "external_ref": {
+            "id": {
+              "type": "HIER_OBJECT_ID",
+              "value": "1.1.1.5297569710197.5499505550575.2524899579752.5252559897569.81015355505550"
+            },
+            "type": "PARTY"
+          }
+        },
+        "time": {
+          "value": "2018-10-25T14:17:31,400"
+        },
+        "description": {
+          "archetype_node_id": "at0001",
+          "type": "ITEM_TREE",
+          "name": {
+            "value": "Procedure list"
+          },
+          "items": {
+            "archetype_node_id": "at0002",
+            "type": "ELEMENT",
+            "name": {
+              "value": "Procedure"
+            },
+            "value": {
+              "type": "DV_CODED_TEXT",
+              "value": "TRATAMENTO CIRURGICO DE FRATURA BIMALEOLAR / TRIMALEOLAR / DA FRATURA-LUXACAO DO TORNOZELO",
+              "defining_code": {
+                "terminology_id": {
+                  "value": "SUS"
+                },
+                "code_string": "0408050497"
+              }
+            }
+          }
+        },
+        "ism_transition": {
+          "current_state": {
+            "value": "completed",
+            "defining_code": {
+              "terminology_id": {
+                "value": "openehr"
+              },
+              "code_string": "532"
+            }
+          },
+          "careflow_step": {
+            "value": "Completed",
+            "defining_code": {
+              "terminology_id": {
+                "value": "local"
+              },
+              "code_string": "at0043"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "outpatient_high_complexity_procedures": {
+    "uid": {
+      "value": "1.2.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050"
+    },
+    "owner_id": {
+      "id": {
+        "type": "HIER_OBJECT_ID",
+        "value": "1.1.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050"
+      },
+      "namespace": "local",
+      "type": "EHR"
+    },
+    "time_created": {
+      "value": "2024-04-01T23:00:17,333"
+    },
+    "versions": {
+      "contribution": {
+        "id": {
+          "type": "HIER_OBJECT_ID",
+          "value": "1.3.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050"
+        },
+        "namespace": "local",
+        "type": "CONTRIBUTION"
+      },
+      "commit_audit": {
+        "system_id": "susehrbuilder.openehr.lampada.uerj.br",
+        "committer": {
+          "type": "PARTY_IDENTIFIED",
+          "name": "UERJ SUS OpenEHR Builder"
+        },
+        "time_committed": {
+          "value": "2024-04-01T23:00:17,333"
+        },
+        "change_type": {
+          "value": "creation",
+          "defining_code": {
+            "terminology_id": {
+              "value": "openehr"
+            },
+            "code_string": "249"
+          }
+        },
+        "description": {
+          "value": "creation of composition"
+        }
+      },
+      "uid": {
+        "value": "1.2.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050::susehrbuilder.openehr.lampada.uerj.br::1"
+      },
+      "data": {
+        "archetype_node_id": "openEHR-EHR-COMPOSITION.outpatient_high_complexity_procedures.v1",
+        "type": "COMPOSITION",
+        "name": {
+          "value": "Outpatient high complexity procedures"
+        },
+        "uid": {
+          "type": "HIER_OBJECT_ID",
+          "value": "1.2.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050"
+        },
+        "archetype_details": {
+          "archetype_id": {
+            "value": "openEHR-EHR-COMPOSITION.outpatient_high_complexity_procedures.v1"
+          },
+          "template_id": {
+            "value": "b1fffd24-8222-4a68-8b3f-075e228b98e1"
+          },
+          "rm_version": "1.0.2"
+        },
+        "language": {
+          "terminology_id": {
+            "value": "ISO_639-1"
+          },
+          "code_string": "en"
+        },
+        "territory": {
+          "terminology_id": {
+            "value": "ISO_3166-1"
+          },
+          "code_string": "BR"
+        },
+        "category": {
+          "value": "event",
+          "defining_code": {
+            "terminology_id": {
+              "value": "openehr"
+            },
+            "code_string": "433"
+          }
+        },
+        "composer": {
+          "type": "PARTY_IDENTIFIED",
+          "name": "Physician"
+        },
+        "content": [
+          {
+            "archetype_node_id": "openEHR-EHR-ADMIN_ENTRY.high_complexity_procedures_sus.v1",
+            "type": "ADMIN_ENTRY",
+            "name": {
+              "value": "HCPA"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-ADMIN_ENTRY.high_complexity_procedures_sus.v1"
+              },
+              "template_id": {
+                "value": "b1fffd24-8222-4a68-8b3f-075e228b98e1"
+              },
+              "rm_version": "1.0.2"
+            },
+            "language": {
+              "terminology_id": {
+                "value": "ISO_639-1"
+              },
+              "code_string": "en"
+            },
+            "encoding": {
+              "terminology_id": {
+                "value": "IANA_character-sets"
+              },
+              "code_string": "UTF-8"
+            },
+            "subject": {
+              "type": "PARTY_SELF",
+              "external_ref": {
+                "id": {
+                  "type": "HIER_OBJECT_ID",
+                  "value": "1.1.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050"
+                },
+                "type": "PARTY"
+              }
+            },
+            "data": {
+              "archetype_node_id": "at0001",
+              "type": "ITEM_TREE",
+              "name": {
+                "value": "components"
+              },
+              "items": [
+                {
+                  "archetype_node_id": "at0023",
+                  "type": "CLUSTER",
+                  "name": {
+                    "value": "General data"
+                  },
+                  "items": [
+                    {
+                      "archetype_node_id": "at0009",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "issue date"
+                      },
+                      "value": {
+                        "type": "DV_DATE",
+                        "value": "2008-02-01TZ"
+                      }
+                    },
+                    {
+                      "archetype_node_id": "at0010",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "reason for encounter"
+                      },
+                      "value": {
+                        "type": "DV_CODED_TEXT",
+                        "value": "QUIMIOTERAPIA",
+                        "defining_code": {
+                          "terminology_id": {
+                            "value": "TP_ATEND"
+                          },
+                          "code_string": "03"
+                        }
+                      }
+                    },
+                    {
+                      "archetype_node_id": "at0011",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "healthcare unit"
+                      },
+                      "value": {
+                        "type": "DV_CODED_TEXT",
+                        "value": "ea230d8f77a5c099a65933d397447a8c3049781db4417652fc29d2373b11f3b17baac6997d11d571",
+                        "defining_code": {
+                          "terminology_id": {
+                            "value": "CNES"
+                          },
+                          "code_string": "6e75618aeb3d3e32"
+                        }
+                      }
+                    },
+                    {
+                      "archetype_node_id": "at0028",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "State"
+                      },
+                      "value": {
+                        "type": "DV_CODED_TEXT",
+                        "value": "PARANÁ",
+                        "defining_code": {
+                          "terminology_id": {
+                            "value": "IBGE"
+                          },
+                          "code_string": "PR"
+                        }
+                      }
+                    },
+                    {
+                      "archetype_node_id": "at0012",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "patient age"
+                      },
+                      "value": {
+                        "type": "DV_COUNT",
+                        "accuracy": "0.0",
+                        "magnitude": "60"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "archetype_node_id": "at0016",
+                  "type": "CLUSTER",
+                  "name": {
+                    "value": "chemotherapy"
+                  },
+                  "items": [
+                    {
+                      "archetype_node_id": "at0013",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "duration of treatment"
+                      },
+                      "value": {
+                        "type": "DV_QUANTITY",
+                        "accuracy": "0.0",
+                        "magnitude": "8.0",
+                        "units": "mo",
+                        "precision": "0"
+                      }
+                    },
+                    {
+                      "archetype_node_id": "at0014",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "schema"
+                      },
+                      "value": {
+                        "type": "DV_TEXT",
+                        "value": "AC+T"
+                      }
+                    },
+                    {
+                      "archetype_node_id": "at0031",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "date of beginning of chemotherapy"
+                      },
+                      "value": {
+                        "type": "DV_DATE",
+                        "value": "2008-01-01TZ"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "archetype_node_id": "openEHR-EHR-ADMIN_ENTRY.patient_discharge.v1",
+            "type": "ADMIN_ENTRY",
+            "name": {
+              "value": "Patient discharge"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-ADMIN_ENTRY.patient_discharge.v1"
+              },
+              "template_id": {
+                "value": "b1fffd24-8222-4a68-8b3f-075e228b98e1"
+              },
+              "rm_version": "1.0.2"
+            },
+            "language": {
+              "terminology_id": {
+                "value": "ISO_639-1"
+              },
+              "code_string": "en"
+            },
+            "encoding": {
+              "terminology_id": {
+                "value": "IANA_character-sets"
+              },
+              "code_string": "UTF-8"
+            },
+            "subject": {
+              "type": "PARTY_SELF",
+              "external_ref": {
+                "id": {
+                  "type": "HIER_OBJECT_ID",
+                  "value": "1.1.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050"
+                },
+                "type": "PARTY"
+              }
+            },
+            "data": {
+              "archetype_node_id": "at0001",
+              "type": "ITEM_TREE",
+              "name": {
+                "value": "Components"
+              },
+              "items": [
+                {
+                  "archetype_node_id": "at0002",
+                  "type": "ELEMENT",
+                  "name": {
+                    "value": "date of discharge"
+                  },
+                  "null_flavour": {
+                    "value": "unknown",
+                    "defining_code": {
+                      "terminology_id": {
+                        "value": "openehr"
+                      },
+                      "code_string": "253"
+                    }
+                  }
+                },
+                {
+                  "archetype_node_id": "at0003",
+                  "type": "ELEMENT",
+                  "name": {
+                    "value": "reason for discharge"
+                  },
+                  "value": {
+                    "type": "DV_CODED_TEXT",
+                    "value": "Permanência - por características próprias doença",
+                    "defining_code": {
+                      "terminology_id": {
+                        "value": "MOTSAIPE"
+                      },
+                      "code_string": "21"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "archetype_node_id": "openEHR-EHR-EVALUATION.problem_diagnosis-sus.v1",
+            "type": "EVALUATION",
+            "name": {
+              "value": "Problem/Diagnosis"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-EVALUATION.problem_diagnosis-sus.v1"
+              },
+              "template_id": {
+                "value": "b1fffd24-8222-4a68-8b3f-075e228b98e1"
+              },
+              "rm_version": "1.0.2"
+            },
+            "language": {
+              "terminology_id": {
+                "value": "ISO_639-1"
+              },
+              "code_string": "en"
+            },
+            "encoding": {
+              "terminology_id": {
+                "value": "IANA_character-sets"
+              },
+              "code_string": "UTF-8"
+            },
+            "subject": {
+              "type": "PARTY_SELF",
+              "external_ref": {
+                "id": {
+                  "type": "HIER_OBJECT_ID",
+                  "value": "1.1.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050"
+                },
+                "type": "PARTY"
+              }
+            },
+            "data": {
+              "archetype_node_id": "at0001",
+              "type": "ITEM_TREE",
+              "name": {
+                "value": "structure"
+              },
+              "items": [
+                {
+                  "archetype_node_id": "at0002.1",
+                  "type": "ELEMENT",
+                  "name": {
+                    "value": "Problem"
+                  },
+                  "value": {
+                    "type": "DV_CODED_TEXT",
+                    "value": "C50.8 Lesao invasiva da mama",
+                    "defining_code": {
+                      "terminology_id": {
+                        "value": "CID10"
+                      },
+                      "code_string": "C508"
+                    }
+                  }
+                },
+                {
+                  "archetype_node_id": "at0.1",
+                  "type": "ELEMENT",
+                  "name": {
+                    "value": "Secondary Diagnosis"
+                  },
+                  "value": {
+                    "type": "DV_CODED_TEXT",
+                    "value": "CID NAO INFORMADO",
+                    "defining_code": {
+                      "terminology_id": {
+                        "value": "CID10"
+                      },
+                      "code_string": "0000"
+                    }
+                  }
+                },
+                {
+                  "archetype_node_id": "at0.2",
+                  "type": "ELEMENT",
+                  "name": {
+                    "value": "Associated causes"
+                  },
+                  "value": {
+                    "type": "DV_CODED_TEXT",
+                    "value": "CID NAO INFORMADO",
+                    "defining_code": {
+                      "terminology_id": {
+                        "value": "CID10"
+                      },
+                      "code_string": "0000"
+                    }
+                  }
+                },
+                {
+                  "archetype_node_id": "at0.4",
+                  "type": "ELEMENT",
+                  "name": {
+                    "value": "Invaded regional linphonodes"
+                  },
+                  "value": {
+                    "type": "DV_BOOLEAN",
+                    "value": "true"
+                  }
+                },
+                {
+                  "archetype_node_id": "openEHR-EHR-CLUSTER.tnm_staging-sus.v1",
+                  "type": "CLUSTER",
+                  "name": {
+                    "value": "Tumour - TNM Cancer staging"
+                  },
+                  "items": [
+                    {
+                      "archetype_node_id": "at0002",
+                      "type": "CLUSTER",
+                      "name": {
+                        "value": "Clinical (cTNM)"
+                      },
+                      "items": {
+                        "archetype_node_id": "at0010",
+                        "type": "ELEMENT",
+                        "name": {
+                          "value": "Clinical staging"
+                        },
+                        "value": {
+                          "type": "DV_TEXT",
+                          "value": "3"
+                        }
+                      }
+                    },
+                    {
+                      "archetype_node_id": "at0006",
+                      "type": "CLUSTER",
+                      "name": {
+                        "value": "Pathological (pTNM)"
+                      },
+                      "items": [
+                        {
+                          "archetype_node_id": "at0035",
+                          "type": "ELEMENT",
+                          "name": {
+                            "value": "Histopathological grading (G)"
+                          },
+                          "null_flavour": {
+                            "value": "unknown",
+                            "defining_code": {
+                              "terminology_id": {
+                                "value": "openehr"
+                              },
+                              "code_string": "253"
+                            }
+                          }
+                        },
+                        {
+                          "archetype_node_id": "at0.44",
+                          "type": "ELEMENT",
+                          "name": {
+                            "value": "date of pathological identification"
+                          },
+                          "value": {
+                            "type": "DV_DATE",
+                            "value": "2007-08-01TZ"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "archetype_node_id": "at0.43",
+                      "type": "ELEMENT",
+                      "name": {
+                        "value": "topography"
+                      },
+                      "value": {
+                        "type": "DV_CODED_TEXT",
+                        "value": "C50.8 Lesao invasiva da mama",
+                        "defining_code": {
+                          "terminology_id": {
+                            "value": "CID10"
+                          },
+                          "code_string": "C508"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "archetype_node_id": "openEHR-EHR-ACTION.procedure-sus.v1",
+            "type": "ACTION",
+            "name": {
+              "value": "Procedure undertaken"
+            },
+            "archetype_details": {
+              "archetype_id": {
+                "value": "openEHR-EHR-ACTION.procedure-sus.v1"
+              },
+              "template_id": {
+                "value": "b1fffd24-8222-4a68-8b3f-075e228b98e1"
+              },
+              "rm_version": "1.0.2"
+            },
+            "language": {
+              "terminology_id": {
+                "value": "ISO_639-1"
+              },
+              "code_string": "en"
+            },
+            "encoding": {
+              "terminology_id": {
+                "value": "IANA_character-sets"
+              },
+              "code_string": "UTF-8"
+            },
+            "subject": {
+              "type": "PARTY_SELF",
+              "external_ref": {
+                "id": {
+                  "type": "HIER_OBJECT_ID",
+                  "value": "1.1.1.48545410099491024998.10250574910157544949.55565651501005757524.85610248991025655555.75649499757505657575050"
+                },
+                "type": "PARTY"
+              }
+            },
+            "time": {
+              "value": "2024-04-01T23:00:17,326"
+            },
+            "description": {
+              "archetype_node_id": "at0001",
+              "type": "ITEM_TREE",
+              "name": {
+                "value": "Procedure list"
+              },
+              "items": {
+                "archetype_node_id": "at0002",
+                "type": "ELEMENT",
+                "name": {
+                  "value": "Procedure"
+                },
+                "value": {
+                  "type": "DV_CODED_TEXT",
+                  "value": "QUIMIOTERAPIA DO CARCINOMA DE MAMA EM ESTÁDIO III",
+                  "defining_code": {
+                    "terminology_id": {
+                      "value": "SUS"
+                    },
+                    "code_string": "0304050067"
+                  }
+                }
+              }
+            },
+            "ism_transition": {
+              "current_state": {
+                "value": "completed",
+                "defining_code": {
+                  "terminology_id": {
+                    "value": "openehr"
+                  },
+                  "code_string": "532"
+                }
+              },
+              "careflow_step": {
+                "value": "Completed",
+                "defining_code": {
+                  "terminology_id": {
+                    "value": "local"
+                  },
+                  "code_string": "at0043"
+                }
+              }
+            }
+          }
+        ]
+      },
+      "lifecycle_state": {
+        "value": "complete",
+        "defining_code": {
+          "terminology_id": {
+            "value": "openehr"
+          },
+          "code_string": "532"
+        }
+      }
+    }
+  }
+}
