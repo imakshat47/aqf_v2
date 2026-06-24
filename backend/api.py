@@ -149,6 +149,9 @@ def _enrich_sort(sort: Optional[SortModel], catalog: List[Dict]) -> Optional[Dic
     }
 
 # ── Routes ────────────────────────────────────────────────────────────────────
+@app.get("/api/load2")
+def load_dataset_get(req: LoadRequest):
+    load_dataset(req)
 
 @app.post("/api/load")
 def load_dataset(req: LoadRequest):
