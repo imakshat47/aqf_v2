@@ -1,0 +1,42 @@
+AQF Demo Preview
+==================
+
+Repository summary:
+- Records: 75
+- Nodes: 74
+- Edges: 2153
+- Demographic units: 50
+- Composition-like units: 100
+
+Top scored fields:
+- date of discharge | q=2.6628 | cov=0.8667 | distinct=1 | widget=date_picker
+- Histopathological grading (G) | q=2.6628 | cov=0.8667 | distinct=1 | widget=dropdown
+- topography | q=2.6628 | cov=0.8667 | distinct=1 | widget=dropdown
+- issue date | q=2.6542 | cov=0.8667 | distinct=0 | widget=dropdown
+- reason for encounter | q=2.6542 | cov=0.8667 | distinct=0 | widget=dropdown
+- healthcare unit | q=2.6542 | cov=0.8667 | distinct=0 | widget=dropdown
+- State | q=2.6542 | cov=0.8667 | distinct=0 | widget=dropdown
+- patient age | q=2.6542 | cov=0.8667 | distinct=0 | widget=dropdown
+- duration of treatment | q=2.6542 | cov=0.8667 | distinct=0 | widget=dropdown
+- schema | q=2.6542 | cov=0.8667 | distinct=0 | widget=dropdown
+
+Candidate fields:
+- date of discharge | Outpatient high complexity procedures / Admin Entry: Patient discharge / Components / date of discharge | widget=date_picker
+- Histopathological grading (G) | Outpatient high complexity procedures / Evaluation: Problem/Diagnosis / structure / Tumour - TNM Cancer staging / Pathological (pTNM) / Histopathological grading (G) | widget=dropdown
+- topography | Outpatient high complexity procedures / Evaluation: Problem/Diagnosis / structure / Tumour - TNM Cancer staging / topography | widget=dropdown
+- issue date | Outpatient high complexity procedures / Admin Entry: HCPA / components / General data / issue date | widget=dropdown
+- reason for encounter | Outpatient high complexity procedures / Admin Entry: HCPA / components / General data / reason for encounter | widget=dropdown
+- healthcare unit | Outpatient high complexity procedures / Admin Entry: HCPA / components / General data / healthcare unit | widget=dropdown
+- State | Outpatient high complexity procedures / Admin Entry: HCPA / components / General data / State | widget=dropdown
+- patient age | Outpatient high complexity procedures / Admin Entry: HCPA / components / General data / patient age | widget=dropdown
+- duration of treatment | Outpatient high complexity procedures / Admin Entry: HCPA / components / chemotherapy / duration of treatment | widget=dropdown
+- schema | Outpatient high complexity procedures / Admin Entry: HCPA / components / chemotherapy / schema | widget=dropdown
+
+Canonical groups:
+- Demographic Data (6 fields)
+- Hospitalisation (15 fields)
+- Outpatient High Complexity Procedures (19 fields)
+
+Adaptive form:
+- Elements: 40
+- Complexity: 40.0

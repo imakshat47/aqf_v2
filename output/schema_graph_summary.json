@@ -1,0 +1,13 @@
+{
+  "records": 75,
+  "repository_types": [
+    "openehr"
+  ],
+  "node_count": 40,
+  "edge_count": 582,
+  "composition_like_units": 50,
+  "ehr_index_units": 0,
+  "demographic_units": 25,
+  "composition_types": {},
+  "record_count": 75
+}

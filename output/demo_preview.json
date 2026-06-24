@@ -1,0 +1,86 @@
+{
+  "records": 75,
+  "nodes": 40,
+  "pruned_nodes": 40,
+  "selected_nodes": 40,
+  "canonical_groups": 3,
+  "adaptive_elements": 40,
+  "top_5_candidates": [
+    {
+      "node_id": "Outpatient_high_complexity_procedures__Admin_Entry:_Patient_discharge__Components__date_of_discharge",
+      "concept_name": "date of discharge",
+      "path": "Outpatient high complexity procedures / Admin Entry: Patient discharge / Components / date of discharge",
+      "coverage_global": 0.3333333333333333,
+      "coverage_local": 1.0,
+      "coverage": 0.8666666666666667,
+      "diversity": 0.04,
+      "local_utility": 0.8753333333333334,
+      "queriability": 2.6628333333333343,
+      "distinct_count": 1,
+      "distinct_values": [
+        "unknown"
+      ],
+      "recommended_widget": "date_picker"
+    },
+    {
+      "node_id": "Outpatient_high_complexity_procedures__Evaluation:_Problem_Diagnosis__structure__Tumour_-_TNM_Cancer_staging__Pathological_(pTNM)__Histopathological_grading_(G)",
+      "concept_name": "Histopathological grading (G)",
+      "path": "Outpatient high complexity procedures / Evaluation: Problem/Diagnosis / structure / Tumour - TNM Cancer staging / Pathological (pTNM) / Histopathological grading (G)",
+      "coverage_global": 0.3333333333333333,
+      "coverage_local": 1.0,
+      "coverage": 0.8666666666666667,
+      "diversity": 0.04,
+      "local_utility": 0.8753333333333334,
+      "queriability": 2.6628333333333343,
+      "distinct_count": 1,
+      "distinct_values": [
+        "unknown"
+      ],
+      "recommended_widget": "dropdown"
+    },
+    {
+      "node_id": "Outpatient_high_complexity_procedures__Evaluation:_Problem_Diagnosis__structure__Tumour_-_TNM_Cancer_staging__topography",
+      "concept_name": "topography",
+      "path": "Outpatient high complexity procedures / Evaluation: Problem/Diagnosis / structure / Tumour - TNM Cancer staging / topography",
+      "coverage_global": 0.3333333333333333,
+      "coverage_local": 1.0,
+      "coverage": 0.8666666666666667,
+      "diversity": 0.04,
+      "local_utility": 0.8753333333333334,
+      "queriability": 2.6628333333333343,
+      "distinct_count": 1,
+      "distinct_values": [
+        "unknown"
+      ],
+      "recommended_widget": "dropdown"
+    },
+    {
+      "node_id": "Outpatient_high_complexity_procedures__Admin_Entry:_HCPA__components__General_data__issue_date",
+      "concept_name": "issue date",
+      "path": "Outpatient high complexity procedures / Admin Entry: HCPA / components / General data / issue date",
+      "coverage_global": 0.3333333333333333,
+      "coverage_local": 1.0,
+      "coverage": 0.8666666666666667,
+      "diversity": 0.0,
+      "local_utility": 0.8666666666666667,
+      "queriability": 2.6541666666666677,
+      "distinct_count": 0,
+      "distinct_values": [],
+      "recommended_widget": "dropdown"
+    },
+    {
+      "node_id": "Outpatient_high_complexity_procedures__Admin_Entry:_HCPA__components__General_data__reason_for_encounter",
+      "concept_name": "reason for encounter",
+      "path": "Outpatient high complexity procedures / Admin Entry: HCPA / components / General data / reason for encounter",
+      "coverage_global": 0.3333333333333333,
+      "coverage_local": 1.0,
+      "coverage": 0.8666666666666667,
+      "diversity": 0.0,
+      "local_utility": 0.8666666666666667,
+      "queriability": 2.6541666666666677,
+      "distinct_count": 0,
+      "distinct_values": [],
+      "recommended_widget": "dropdown"
+    }
+  ]
+}

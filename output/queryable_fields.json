@@ -1,0 +1,247 @@
+{
+  "compositions": [
+    {
+      "name": "Demographic data",
+      "field_count": 2,
+      "sections": [
+        {
+          "key": "Demographic data||Admin Entry: Demographic data",
+          "label": "Admin Entry: Demographic data",
+          "fields": [
+            {
+              "field_id": "Demographic_data__Admin_Entry:_Demographic_data__components__race",
+              "concept_name": "race",
+              "path": "Demographic data / Admin Entry: Demographic data / components / race",
+              "datatype": "DV_CODED_TEXT",
+              "recommended_widget": "dropdown",
+              "recommended_operators": [
+                "is",
+                "is not",
+                "contains",
+                "starts with"
+              ],
+              "coverage": 0.8666666666666667,
+              "coverage_local": 1.0,
+              "distinct_count": 0,
+              "examples": []
+            },
+            {
+              "field_id": "Demographic_data__Admin_Entry:_Demographic_data__components__ethnic_group",
+              "concept_name": "ethnic group",
+              "path": "Demographic data / Admin Entry: Demographic data / components / ethnic group",
+              "datatype": "DV_TEXT",
+              "recommended_widget": "dropdown",
+              "recommended_operators": [
+                "is",
+                "is not",
+                "contains",
+                "starts with"
+              ],
+              "coverage": 0.8666666666666667,
+              "coverage_local": 1.0,
+              "distinct_count": 0,
+              "examples": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hospitalisation",
+      "field_count": 3,
+      "sections": [
+        {
+          "key": "Hospitalisation||Admin Entry: Patient admission",
+          "label": "Admin Entry: Patient admission",
+          "fields": [
+            {
+              "field_id": "Hospitalisation__Admin_Entry:_Patient_admission__Tree__Patient_class",
+              "concept_name": "Patient class",
+              "path": "Hospitalisation / Admin Entry: Patient admission / Tree / Patient class",
+              "datatype": "DV_TEXT",
+              "recommended_widget": "dropdown",
+              "recommended_operators": [
+                "is",
+                "is not",
+                "contains",
+                "starts with"
+              ],
+              "coverage": 0.8666666666666667,
+              "coverage_local": 1.0,
+              "distinct_count": 0,
+              "examples": []
+            }
+          ]
+        },
+        {
+          "key": "Hospitalisation||Admin Entry: Patient discharge",
+          "label": "Admin Entry: Patient discharge",
+          "fields": [
+            {
+              "field_id": "Hospitalisation__Admin_Entry:_Patient_discharge__Components__hospital_infection",
+              "concept_name": "hospital infection",
+              "path": "Hospitalisation / Admin Entry: Patient discharge / Components / hospital infection",
+              "datatype": "DV_TEXT",
+              "recommended_widget": "dropdown",
+              "recommended_operators": [
+                "is",
+                "is not",
+                "contains",
+                "starts with"
+              ],
+              "coverage": 0.8666666666666667,
+              "coverage_local": 1.0,
+              "distinct_count": 0,
+              "examples": []
+            }
+          ]
+        },
+        {
+          "key": "Hospitalisation||Evaluation: Problem/Diagnosis",
+          "label": "Evaluation: Problem/Diagnosis",
+          "fields": [
+            {
+              "field_id": "Hospitalisation__Evaluation:_Problem_Diagnosis__structure__Secondary_Diagnosis",
+              "concept_name": "Secondary Diagnosis",
+              "path": "Hospitalisation / Evaluation: Problem/Diagnosis / structure / Secondary Diagnosis",
+              "datatype": "DV_CODED_TEXT",
+              "recommended_widget": "dropdown",
+              "recommended_operators": [
+                "is",
+                "is not",
+                "contains",
+                "starts with"
+              ],
+              "coverage": 0.8666666666666667,
+              "coverage_local": 1.0,
+              "distinct_count": 12,
+              "examples": [
+                "S52.6 Frat da extremidade distal do radio e cubito",
+                "W99.9 Local NE",
+                "T02.2 Frat envolv regioes mult de um membro super",
+                "V29.9 Motociclista acid trans NE",
+                "S82.5 Frat do maleolo medial",
+                "W19.0 Residencia",
+                "S52.5 Frat da extremidade distal do radio",
+                "X94.3 Area p/a pratica de esportes e atletismo",
+                "T82.5 Complic mec outr disp implantes cardiovasc",
+                "Y71.1 Disp p/fins terap aparelhagem reabilitacao",
+                "S82.6 Frat do maleolo lateral",
+                "W01.0 Residencia"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Outpatient high complexity procedures",
+      "field_count": 3,
+      "sections": [
+        {
+          "key": "Outpatient high complexity procedures||Admin Entry: Patient discharge",
+          "label": "Admin Entry: Patient discharge",
+          "fields": [
+            {
+              "field_id": "Outpatient_high_complexity_procedures__Admin_Entry:_Patient_discharge__Components__date_of_discharge",
+              "concept_name": "date of discharge",
+              "path": "Outpatient high complexity procedures / Admin Entry: Patient discharge / Components / date of discharge",
+              "datatype": "DV_DATE",
+              "recommended_widget": "date_picker",
+              "recommended_operators": [
+                "is",
+                "is not",
+                "greater than",
+                "less than",
+                "between"
+              ],
+              "coverage": 0.8666666666666667,
+              "coverage_local": 1.0,
+              "distinct_count": 12,
+              "examples": [
+                "2009-09-01T00:00:00-03:00",
+                "2012-04-01T00:00:00-03:00",
+                "2012-07-01T00:00:00-03:00",
+                "2011-06-01T00:00:00-03:00",
+                "2009-08-01T00:00:00-03:00",
+                "2010-01-01T00:00:00-03:00",
+                "2012-11-01T00:00:00-03:00",
+                "2009-07-01T00:00:00-03:00",
+                "2009-05-01T00:00:00-03:00",
+                "2010-03-01T00:00:00-03:00",
+                "2009-12-01T00:00:00-03:00",
+                "2010-09-01T00:00:00-03:00"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "Outpatient high complexity procedures||Evaluation: Problem/Diagnosis",
+          "label": "Evaluation: Problem/Diagnosis",
+          "fields": [
+            {
+              "field_id": "Outpatient_high_complexity_procedures__Evaluation:_Problem_Diagnosis__structure__Tumour_-_TNM_Cancer_staging__Pathological_(pTNM)__Histopathological_grading_(G)",
+              "concept_name": "Histopathological grading (G)",
+              "path": "Outpatient high complexity procedures / Evaluation: Problem/Diagnosis / structure / Tumour - TNM Cancer staging / Pathological (pTNM) / Histopathological grading (G)",
+              "datatype": "DV_TEXT",
+              "recommended_widget": "dropdown",
+              "recommended_operators": [
+                "is",
+                "is not",
+                "contains",
+                "starts with"
+              ],
+              "coverage": 0.8666666666666667,
+              "coverage_local": 1.0,
+              "distinct_count": 12,
+              "examples": [
+                "S52.6 Frat da extremidade distal do radio e cubito",
+                "T02.2 Frat envolv regioes mult de um membro super",
+                "S82.5 Frat do maleolo medial",
+                "S52.5 Frat da extremidade distal do radio",
+                "T82.5 Complic mec outr disp implantes cardiovasc",
+                "S82.6 Frat do maleolo lateral",
+                "P05.9 Retardo NE do crescimento fetal",
+                "P22.0 Sindr da angustia respirat do recem-nascido",
+                "I64   Acid vasc cerebr NE como hemorrag isquemico",
+                "B20.5 Doenc p/HIV result em outr micoses",
+                "P07.3 Outr recem-nascidos de pre-termo",
+                "P20.0 Hipoxia intra-uter diagn ant inic trab parto"
+              ]
+            },
+            {
+              "field_id": "Outpatient_high_complexity_procedures__Evaluation:_Problem_Diagnosis__structure__Tumour_-_TNM_Cancer_staging__topography",
+              "concept_name": "topography",
+              "path": "Outpatient high complexity procedures / Evaluation: Problem/Diagnosis / structure / Tumour - TNM Cancer staging / topography",
+              "datatype": "DV_TEXT",
+              "recommended_widget": "dropdown",
+              "recommended_operators": [
+                "is",
+                "is not",
+                "contains",
+                "starts with"
+              ],
+              "coverage": 0.8666666666666667,
+              "coverage_local": 1.0,
+              "distinct_count": 12,
+              "examples": [
+                "S52.6 Frat da extremidade distal do radio e cubito",
+                "T02.2 Frat envolv regioes mult de um membro super",
+                "S82.5 Frat do maleolo medial",
+                "S52.5 Frat da extremidade distal do radio",
+                "T82.5 Complic mec outr disp implantes cardiovasc",
+                "S82.6 Frat do maleolo lateral",
+                "P05.9 Retardo NE do crescimento fetal",
+                "P22.0 Sindr da angustia respirat do recem-nascido",
+                "I64   Acid vasc cerebr NE como hemorrag isquemico",
+                "B20.5 Doenc p/HIV result em outr micoses",
+                "P07.3 Outr recem-nascidos de pre-termo",
+                "P20.0 Hipoxia intra-uter diagn ant inic trab parto"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

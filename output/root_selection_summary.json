@@ -1,0 +1,66 @@
+{
+  "Outpatient high complexity procedures": {
+    "available": 28,
+    "selected": 20,
+    "top_fields": [
+      "Problem",
+      "Procedure",
+      "issue date",
+      "State",
+      "date of beginning of chemotherapy",
+      "date of pathological identification",
+      "Secondary Diagnosis",
+      "topography",
+      "patient age",
+      "date of discharge",
+      "schema",
+      "healthcare unit",
+      "reason for encounter",
+      "reason for discharge",
+      "duration of treatment",
+      "Clinical staging",
+      "chemotherapy",
+      "Tumour - TNM Cancer staging",
+      "Procedure list",
+      "Admin Entry: Patient discharge"
+    ]
+  },
+  "Hospitalisation": {
+    "available": 24,
+    "selected": 20,
+    "top_fields": [
+      "date of discharge",
+      "Problem",
+      "Secondary Diagnosis",
+      "Procedure",
+      "Issue date",
+      "Admit date/time",
+      "State/province",
+      "Admission type",
+      "claim reason",
+      "Hospital service",
+      "Universal ID",
+      "hospital infection",
+      "death indicator",
+      "Patient class",
+      "Procedure list",
+      "Admin Entry: Patient discharge",
+      "Admin Entry: Authorization for hospital admission",
+      "Admin Entry: Patient admission",
+      "Evaluation: Problem/Diagnosis",
+      "Action: Procedure undertaken"
+    ]
+  },
+  "Demographic data": {
+    "available": 6,
+    "selected": 6,
+    "top_fields": [
+      "birth date",
+      "gender",
+      "race",
+      "nationality",
+      "educational level",
+      "ethnic group"
+    ]
+  }
+}
